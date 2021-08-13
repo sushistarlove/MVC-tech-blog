@@ -9,32 +9,17 @@
 </head>
 
 <body>
-  <div class="containerer">
-    <header>
-      <h1>
-        <a href="/">Tech Blog</a>
-      </h1>
-        <nav>
-          <span><a href="/">Home</a></span> 
-          {{#if loggedIn}}
-          <a href="/Posts">Posts</a>
-          <button id="logout" class="btn-no-style">logout</button>
-          {{else}}
-          <a href="/login">login</a>
-          {{/if}}
-        </nav>
-    </header>
+  <div class="container">
     <main>
       {{{ body }}}
     </main>
     <footer>
-      Powered By Javascript
     </footer>
   </div>
 
-  {{#if loggedIn}}
-  <script src="/js/logout.js"></script>
-  {{/if}}
+  {{!-- {{#if loggedIn}} --}}
+  <script src="/js/javascript.js"></script>
+  {{!-- {{/if}} --}}
 
 </body>
 
